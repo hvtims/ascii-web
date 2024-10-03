@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII ART</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            white-space: pre; 
+        }
+    </style> -->
+</head>
+<body>
+
+    <h1> ascii art</h1>
+
+    <form method="POST" action="/Asscii">
+        <label for="userText">Enter your text:</label><br>
+        <textarea type="text" id="userText" name="userText" maxlength="200" placeholder="Type here..." required></textarea><br><br>
+
+        <label for="bannerSelect">Choose a banner:</label><br>
+        <select id="bannerSelect" name="bannerSelect">
+            <option value="standard" checked>Standard</option>
+            <option value="shadow">Shadow</option>
+            <option value="thinkertoy">Thinkertoy</option>
+           
+           
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+<pre>{{.}}</pre>
+    <!-- {{ if .Result }}
+    <div class="result">
+        <h2>Your ASCII Art:</h2>
+        <pre>{{ .Result }}</pre>
+    </div>
+    {{ end }} -->
+
+</body>
+</html>
